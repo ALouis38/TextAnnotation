@@ -6,15 +6,13 @@ $(document).ready(function() {
 
     tinymce.init({
         selector: "textarea"
-    });
-
-    $('#annotate').annotator();
-    
+    });    
 });
 
-function sendText(sender){
+function sendText(sender){   
 
     if(first){
+        $('#annotate').annotator();
         $('#annotate div.annotator-wrapper').append(tinymce.activeEditor.getContent());
          first = false;
     }
