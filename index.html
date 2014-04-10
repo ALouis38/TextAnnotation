@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Text-annotation demo</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="css/annotator.min.css">
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
+
+
+         <script src="js/libs/jquery.js"></script>
+        <script src="js/libs/bootstrap.min.js"></script>
+        <script src="js/libs/tinymce/tinymce.min.js"></script>
+        <script src="js/libs/annotator-full.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+            	<div class="col-md-12">
+            		<textarea></textarea>
+            	</div>
+            </div>
+        	<hr/>
+            <div class="row">
+            	<div class="col-md-12" style="text-align:center;margin:15px;">
+            	 	<button class="btn btn-primary" role="button" onclick="sendText(this);">
+                    	<span class="glyphicon glyphicon-arrow-down"></span> Send text to annotator
+                	</button>
+            	</div>
+            </div>
+            <hr/>
+            <div class="row">
+            	<div class="col-md-12">
+            		<div id="annotator-container">
+	            		<div id="annotate">
+	            			
+	            		</div>
+            		</div>
+            	</div>
+            </div>
+        </div>
+       
+    </body>
+</html>
